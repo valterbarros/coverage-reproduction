@@ -1,6 +1,6 @@
 import VueTeste from "./VueTeste.vue";
 import { render, screen } from "@testing-library/vue";
-import { describe, expect, it, vi } from "vitest";
+import { describe, expect, it } from "vitest";
 
 const renderTest = () => render(VueTeste);
 
