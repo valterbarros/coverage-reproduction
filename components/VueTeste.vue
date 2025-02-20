@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import { ref } from "vue";
-const state = ref(0);
+
+function getStateRef() {
+  const state = ref(Math.random() > 0 ? 1 : 0);
+
+  return { state };
+}
+
+const { state } = getStateRef();
 </script>
 
 <template>
